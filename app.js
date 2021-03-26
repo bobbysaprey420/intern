@@ -43,5 +43,9 @@ app.use("/qsubject", qsubjectRoutes);
 let server=app.listen('3000', () => {
     console.log('Server started at port 3000');
 });
-
+process.on('SIGTERM',()=>{
+    server.close(()=>{
+        console.log('Process Terminated');
+    })
+})
 module.exports=server;
