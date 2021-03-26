@@ -30,6 +30,7 @@ describe('Tasks API', () => {
                 .end((err, response) => {
                     response.should.have.status(404);
                 done();
+                process.exit();
                 });
         });
 
