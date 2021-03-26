@@ -40,8 +40,8 @@ app.use("/exam", examRoutes);
 app.use("/user", userRoutes);
 app.use("/qsubject", qsubjectRoutes);
 
-let server=app.listen('3000', () => {
-    console.log('Server started at port 3000');
+let server=app.listen('8080', () => {
+    console.log('Server started at port 8080');
 });
 // process.on('SIGTERM',()=>{
 //     server.close(()=>{
